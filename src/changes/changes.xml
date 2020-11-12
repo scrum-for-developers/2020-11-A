@@ -40,6 +40,12 @@
 			<action dev="Scrum-Avengers" type="fix">
 				Change value to a minimum year input of 1900
 			</action>
+			<action dev="Scrum-Avengers" type="fix">
+				Change value to a maximum year input of 2020
+			</action>
+			<action dev="Scrum-Avengers" type="fix">
+				Change input value of title to a maximum character number of 255
+			</action>
 		</release>
 	</body>
 </document>

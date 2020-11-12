@@ -10,6 +10,7 @@ import org.hibernate.validator.constraints.Range;
 public class BookDataFormData {
 
   @NotEmpty(message = "{empty.bookDataFormData.title}")
+  @Length(message = "{invalid.length.bookDataFormData.title}", max = 255)
   private String title;
 
   @NotEmpty(message = "{empty.bookDataFormData.edition}")

@@ -27,6 +27,8 @@ public enum PageElement {
         return PageElement.EDITION_ERROR;
       case "year":
         return PageElement.YEAR_ERROR;
+      case "title":
+        return PageElement.TITLE_ERROR;
       default:
         throw new IllegalArgumentException("Could not find error element for " + field);
     }

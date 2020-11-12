@@ -19,7 +19,7 @@ public class BookDataFormData {
   @NotEmpty(message = "{empty.bookDataFormData.yearOfPublication}")
   @Numeric(message = "{notvalid.bookDataFormData.yearOfPublication}")
   @Length(message = "{invalid.length.bookDataFormData.yearOfPublication}", min = 4, max = 4)
-  @Range(message = "{invalid.range.bookDataFormData.yearOfPublication}", min = 1000)
+  @Range(message = "{invalid.range.bookDataFormData.yearOfPublication}", min = 1900)
   private String yearOfPublication;
 
   @NotEmpty(message = "{empty.bookDataFormData.isbn}")

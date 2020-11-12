@@ -37,6 +37,9 @@
 			<action dev="Scrum-Avengers" type="add">
 				Improve error messages.
 			</action>
+			<action dev="Scrum-Avengers" type="fix">
+				Change value to a minimum year input of 1900
+			</action>
 		</release>
 	</body>
 </document>

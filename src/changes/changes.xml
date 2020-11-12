@@ -29,6 +29,8 @@
 			description="Improved Input validation">
 			<action dev="Scrum-Avengers" type="Bugfix">
 				Year not 0 Validation.
+			<action dev="Scrum-Avengers" type="update">
+				Improve error messages.
 			</action>
 		</release>
 	</body>

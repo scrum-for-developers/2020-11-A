@@ -27,8 +27,15 @@
 
 		<release version="1.1" date="2020-11-12"
 			description="Improved Input validation">
-			<action dev="Scrum-Avengers" type="Bugfix">
+			<action dev="Scrum-Avengers" type="fix">
 				Year not 0 Validation.
+			</action>
+		</release>
+
+		<release version="1.2" date="2020-11-12"
+			description="Improved Input validation">
+			<action dev="Scrum-Avengers" type="add">
+				Improve error messages.
 			</action>
 		</release>
 	</body>

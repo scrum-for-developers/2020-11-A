@@ -11,6 +11,5 @@ Feature: Borrowing borrowed and available books
 
     Examples:
 
-      | isbn       | user          | message                       |
-      | 0552131075 | user@test.com | The book is already borrowed. |
-
+      | isbn       | user          | message                                                                                                                            |
+      | 0552131075 | user@test.com | The book is already borrowed.                                                                                                      |

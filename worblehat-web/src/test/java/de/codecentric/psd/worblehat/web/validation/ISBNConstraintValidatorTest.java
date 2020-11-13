@@ -7,40 +7,36 @@ import static org.mockito.Mockito.mock;
 import javax.validation.ConstraintValidatorContext;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-public class ISBNConstraintValidatorTest {
+class ISBNConstraintValidatorTest {
 
   private ISBNConstraintValidator isbnConstraintValidator;
 
   private ConstraintValidatorContext constraintValidatorContext;
 
   @BeforeEach
-  public void setUp() throws Exception {
+  void setUp() {
     isbnConstraintValidator = new ISBNConstraintValidator();
     constraintValidatorContext = mock(ConstraintValidatorContext.class);
   }
 
   @Test
-  public void initializeShouldTakeIsbn() throws Exception {
+  void initializeShouldTakeIsbn() {
     ISBN isbn = mock(ISBN.class);
     isbnConstraintValidator.initialize(isbn);
   }
 
-  @Test
-  public void shouldReturnTrueIfBlank() throws Exception {
-    boolean actual = isbnConstraintValidator.isValid("", constraintValidatorContext);
-    assertTrue(actual);
+  @ParameterizedTest
+  @ValueSource(strings = {"9783499229169", "0132350882", ""})
+  void shouldBeValidISBN(String isbn) {
+    assertTrue(isbnConstraintValidator.isValid(isbn, constraintValidatorContext));
   }
 
-  @Test
-  public void shouldReturnTrueIfValidISBN() throws Exception {
-    boolean actual = isbnConstraintValidator.isValid("0132350882", constraintValidatorContext);
-    assertTrue(actual);
-  }
-
-  @Test
-  public void shouldReturnFalseIfInvalidISBN() throws Exception {
-    boolean actual = isbnConstraintValidator.isValid("0123459789", constraintValidatorContext);
-    assertFalse(actual);
+  @ParameterizedTest
+  @ValueSource(strings = {"9783499229168", "0123459789"})
+  void shouldBeInvalidISBN(String isbn) {
+    assertFalse(isbnConstraintValidator.isValid(isbn, constraintValidatorContext));
   }
 }

@@ -47,5 +47,12 @@
 				Change input value of title to a maximum character number of 255
 			</action>
 		</release>
+
+		<release version="1.3" date="2020-11-13"
+			description="Improved Input validation">
+			<action dev="Scrum-Avengers" type="update">
+				Added ability to enter ISBN13 values
+			</action>
+		</release>
 	</body>
 </document>

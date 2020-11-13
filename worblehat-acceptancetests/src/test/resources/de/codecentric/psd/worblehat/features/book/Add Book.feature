@@ -12,11 +12,12 @@ Feature: Adding a new book to the library
 
     Examples:
 
-      | isbn       | author          | title    | edition | year | author2         | title2   | nr     |
-      | 0552131075 | Terry Pratchett | Sourcery | 1       | 1989 |                 |          | 1      |
-      | 0552131075 | Terry Pratchett | Sourcery | 1       | 1989 | Terry Pratchett | Sourcery | 2      |
-      | 0552131075 | Terry Pratchett | Sourcery | 1       | 1989 | Jerry Pratchett | Sourcery | 1      |
-      | 0552131075 | Terry Pratchett | Sourcery | 1       | 1989 | Terry Pratchett | Mastery  | 1      |
+      | isbn          | author          | title      | edition | year | author2         | title2   | nr     |
+      | 0552131075    | Terry Pratchett | Sourcery   | 1       | 1989 |                 |          | 1      |
+      | 0552131075    | Terry Pratchett | Sourcery   | 1       | 1989 | Terry Pratchett | Sourcery | 2      |
+      | 0552131075    | Terry Pratchett | Sourcery   | 1       | 1989 | Jerry Pratchett | Sourcery | 1      |
+      | 0552131075    | Terry Pratchett | Sourcery   | 1       | 1989 | Terry Pratchett | Mastery  | 1      |
+      | 9783499229169 | Terry Pratchett | Sourcery 2 | 1       | 1989 | Terry Pratchett | Mastery  | 1      |
 
 
 
